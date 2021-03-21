@@ -1,0 +1,300 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr;     /* fr=fractional unit */
+}
+
+.nav-wrapper {
+     display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    text-transform: uppercase;          /* changing text to upper case, does not effect html*/
+    font-size: 0.9em;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+   color: #8a8a8a;
+   text-decoration: none;
+   transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+/* Portfolio styles */
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+} 
+.img-darken {
+transition: 1s;
+filter: brightness(10%);
+}
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+
+}
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent
+
+}
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: blueviolet;
+}
+
+/*--------
+/* section---------------------------------------*/
+.section-1-wrapper {
+    display: flex;
+    flex-direction: colum;
+    padding-top: 20px;
+    background-color: thistle;
+    flex: 1 300px ;
+    flex-wrap: wrap;
+    /*margin: auto;*/
+  
+    
+}
+.phase-wrapper {
+    display: flex;
+    -ms-text-justify: auto;
+    /*flex-wrap: wrap; */
+    flex-direction: column;  /*puts title and text on 2 diff lines */
+    padding: 10px;
+    background-color: turquoise;
+    
+
+}
+.phase-title {
+    
+    margin: auto;
+  
+}
+.phase-text1 , .phase-text2 , .phase-text3 {
+    justify-self: center;
+    margin: 20px;
+    padding: 40px;
+    
+    
+    
+}
+
+/* FOOTER */
+        .footer {
+            width: 100%;
+            background: #146569;
+            display: block;
+         }
+         
+         .inner-footer {
+             width: 95%;
+             margin: auto;
+             padding: 30px 10px;
+             display: flex;
+             /*flex-direction: column;*/
+             flex-wrap: wrap;
+             box-sizing: border-box;
+             justify-content: center;
+         }
+         
+        .footer-items {
+            width: 25%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            color: #fff;
+        }
+         
+        .footer-items p {
+            font-size: 16px;
+            text-align: justify;
+            line-height: 25px;
+            color: #fff;
+        }
+         
+        .footer-items h1 {
+            color: #fff;
+        }
+         
+        .border1 {
+            height: 3px;
+            width: 40px;
+            background: #ff9800;
+            color: #ff9800;
+            background-color: #ff9800;
+            border: 0px;
+        }
+         
+        ul {
+            list-style: none;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 0.5px;  
+         }
+         
+        ul a {
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            transition: 0.3s;
+        }
+         
+        ul a:hover {
+            color: #ff9800;
+        }
+         
+        ul li {
+            margin: 10px 0;
+            height: 25px;
+        }
+         
+        li i {
+            margin-right: 20px;
+        }
+         
+        .social-media {
+            width: 100%;
+            color: #fff;
+            text-align: center;
+            font-size: 20px;
+        }
+         
+        .social-media a {
+            text-decoration: none;
+        }
+         
+        .social-media i {
+            height: 25px;
+            width: 25px;
+            margin: 20px 10px;
+            padding: 4px;
+            color: #fff;
+            transition: 0.5s;
+        }
+         
+        .social-media i:hover {
+            transform: scale(1.5);
+        }
+         
+        .footer-bottom {
+            padding: 10px;
+            background: #00121b;
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+        }
+         
+        /* for tablet mode view */
+         
+        @media screen and (min-width: 600px) and (max-width: 1275px) {
+            .inner-footer {
+                flex-direction: row;
+            }
+            .footer-items {
+                width: 50%;
+                
+            }
+            .section-1-wrapper {
+                
+                flex-direction: row;
+                flex-grow: 1;
+                justify-content: center;
+            }
+            .phase-wrapper {
+                
+            }
+            .phase-text1 {
+
+                background-color: tomato;
+            }
+            .phase-text2 {
+                background-color: yellow;
+
+            }
+            .phase-text3 {
+                background-color: goldenrod;
+
+            }
+        }
+         
+        /* for full screen view */
+         
+        @media screen and (min-width: 1276px) {
+            .inner-footer {
+
+            flex-direction: row;
+            
+            }
+            .footer-items {
+                width: 25%;
+                
+            }
+            /*=======*/
+            .section-1-wrapper {
+                flex-direction: row;
+                justify-content: center;
+                
+            }
+            .phase-wrapper {
+                flex: 1;
+                align-self: flex-start;
+                
+
+            }
+            
+        }
+        
+         
+        /* you can toggle the media screen view accordingly by changing the (max-width: px) to your convenience */
+         
+        
+    
