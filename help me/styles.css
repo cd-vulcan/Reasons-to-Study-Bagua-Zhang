@@ -1,5 +1,12 @@
+html, body
+{
+width: 100%;
+overflow-x: hidden;
+}
+
 body {
     margin: 0px;
+    
 }
 
 .container {
@@ -42,10 +49,11 @@ body {
 .nav-link-wrapper a:hover {
     color: black;
 }
-/* Portfolio styles */
+/* Portfolio styles ================*/
 .portfolio-items-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    height: 140%;
+    grid-template-rows: 25% 25% 25%;
 }
 
 .portfolio-item-wrapper {
@@ -56,7 +64,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 350px;
+    height: 150px;
     width: 100%;
 }
 
@@ -72,13 +80,15 @@ body {
     padding-left: 100px;
     padding-right: 100px;
 } 
-.img-darken {
+.image-blur {
 transition: 1s;
 filter: brightness(10%);
 }
 .logo-wrapper img {
     width: 50%;
     margin-bottom: 20px;
+    margin: auto;
+    
 
 }
 .img-text-wrapper .subtitle {
@@ -96,12 +106,14 @@ filter: brightness(10%);
 /* section---------------------------------------*/
 .section-1-wrapper {
     display: flex;
-    flex-direction: colum;
+    flex-direction: column;
     padding-top: 20px;
     background-color: thistle;
     flex: 1 300px ;
-    flex-wrap: wrap;
-    /*margin: auto;*/
+    /*flex-wrap: wrap;*/
+    margin-top: 4.5%;
+    width: 100%;
+    
   
     
 }
@@ -113,17 +125,21 @@ filter: brightness(10%);
     padding: 10px;
     background-color: turquoise;
     
+    
 
 }
 .phase-title {
     
     margin: auto;
+    
   
 }
 .phase-text1 , .phase-text2 , .phase-text3 {
     justify-self: center;
     margin: 20px;
     padding: 40px;
+    background-color: whitesmoke;
+    
     
     
     
@@ -141,7 +157,7 @@ filter: brightness(10%);
              margin: auto;
              padding: 30px 10px;
              display: flex;
-             /*flex-direction: column;*/
+             flex-direction: column;
              flex-wrap: wrap;
              box-sizing: border-box;
              justify-content: center;
@@ -236,6 +252,16 @@ filter: brightness(10%);
         /* for tablet mode view */
          
         @media screen and (min-width: 600px) and (max-width: 1275px) {
+            .logo-wrapper img {
+                
+                margin-top: 270px;
+            
+            }
+            .portfolio-img-background {
+                height: 350px;
+
+            }
+            
             .inner-footer {
                 flex-direction: row;
             }
@@ -246,15 +272,20 @@ filter: brightness(10%);
             .section-1-wrapper {
                 
                 flex-direction: row;
-                flex-grow: 1;
+                flex-wrap: wrap;
                 justify-content: center;
+                
             }
             .phase-wrapper {
+                align-self: flex-start;
+                width: 25%;
+                flex-basis: 15rem;
                 
             }
             .phase-text1 {
 
                 background-color: tomato;
+                
             }
             .phase-text2 {
                 background-color: yellow;
@@ -262,13 +293,28 @@ filter: brightness(10%);
             }
             .phase-text3 {
                 background-color: goldenrod;
+                /*flex: 2 15rem;*/
 
+            }
+            .portfolio-items-wrapper {
+                
+                
+                grid-template-columns: 1fr 1fr 1fr;
             }
         }
          
         /* for full screen view */
          
         @media screen and (min-width: 1276px) {
+            .logo-wrapper img {
+                
+                margin-top: 270px;
+            
+            }
+            .portfolio-img-background {
+                height: 350px;
+
+            }
             .inner-footer {
 
             flex-direction: row;
@@ -289,6 +335,11 @@ filter: brightness(10%);
                 align-self: flex-start;
                 
 
+            }
+            .portfolio-items-wrapper {
+                
+                
+                grid-template-columns: 1fr 1fr 1fr;
             }
             
         }
