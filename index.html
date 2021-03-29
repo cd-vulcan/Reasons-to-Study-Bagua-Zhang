@@ -1,42 +1,222 @@
-<!DOCTYPE html>         <!--Document declaration-->
-<html lang="en">
-    <head>       <!-- contains the meta data-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BoomBaby</title>         <!--title tht shows in browser-->
-    </head>
-    
-    <body>          <!--only one body for content-->
-        <header id="home">
-            <h1>BaguaZhang</h1>
-            <nav>       <!--nav element-->
-                <ul>        <!--un ordered list-->
-                    <li><a href="#home"> HOME</a></li>
-                    <li><a href="#What"> what is it</a></li>
-                    <li><a href="#ethics"> ethics</a></li>
-                </ul>
-            </nav>
-    </header>
-        <section id="What">
-            
-            <h3>what is bagua?</h3>
-            <p>this section is all about whats bagua is."Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        </section>
-        <section>
-                <h3>Where did it originate from?</h3>
-                <p> baguazhang originated from the wudang mountians.</p>
-        </section>
-        <section id="ethics">
-                <h3>Ethics</h3>
-                <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+<!DOCTYPE html>
+<html lang='en'>
 
-                </p>
-        </section>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                    <!--link to pages, can use url-->
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="aboutme.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>Chris Diaz</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PORTFOLIO-->
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/quip.png" alt="">
+                        </div>
+
+                        <div class="subtitle">boom baby spin me round</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/quip.png" alt="">
+                        </div>
+
+                        <div class="subtitle">boom baby spin me round</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/quip.png">
+                        </div>
+                        <div class="subtitle">boom baby spin me round</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section-1-wrapper">
+        <div class="phase-wrapper phase-text1">
+            <h3 class="phase-title">phase1</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed vitae sapien hendrerit porta. Ut eget
+                odio et est rutrum convallis. Donec eu arcu sagittis, condimentum ex id, egestas est. Donec et mauris
+                enim. Donec aliquet imperdiet nunc, sed pulvinar nunc. Cras at odio pulvinar leo dapibus hendrerit
+                gravida quis tellus. In tincidunt mauris massa, sit amet congue nunc faucibus sed.
+
+                Suspendisse ornare nibh nec anteFusce varius ut sapien in laoreet. Proin quam nibh, accumsan a.
+            </p>
+        </div>
+        <div class="phase-wrapper phase-text2">
+            <h3 class="phase-title">phase 2</h3>
+            <p class="phase-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo odio, fermenttus finibus turpis.
+                Nullam vitae odio eros. Suspendisse varius dui eu libero efficitur rutrum. Etiam aliquam risus diam, eu
+                facilisis purus lacinia pellentesque.
+
+
+            </p>
+        </div>
+        <div class="phase-wrapper phase-text3">
+            <h3 class="phase-title">phase 3</h3>
+            <p class="phase-text">
+                Lorem ipsum dolor sit aorbi eget leo turpis. In tristique quis sapien vitae aliquam. Aenean sagittis
+                magna eu orci hendrerit suscipit. Etiam rutrum vitae tortor nec laoreet. Duis bibendum neque vitae
+                bibendum dapibus. Sed est purus, semper sed blandit sit amet, sollicitudin et orci. Cras congue ornare
+                placerat. Donec ligula lacus, condimentum pretium tincidunt at, varius eget urna. Vivamus ac auctor
+                sapien. Mauris luctus finibus turpis. Nullam vitae odio eros. Suspendisse varius dui eu libero efficitur
+                rutrum. Etiam aliquam risus diam, eu facilisis purus lacinia pellentesque.
+
+
+            </p>
+    </section>
+    <div id="error"></div>
+    <form action= "/" method="GET">
+        <div>
+            <label for="name">Name </label>
+            <input id="name" name= "name" type="text">
+        </div>
+        <div>
+            <label for="password">Password </label>
+            <input id="password" name= "password" type="password">
+        </div>
+        <button type="submit"> Submit</button>
+    </form>
     <footer>
-        <ul>
-            <li><a href="#home"> Home</a></li>
-        </ul>
+        <!--  FOOTER START -->
+
+        <div class="footer">
+            <div class="inner-footer">
+
+                <!--  for company name and description -->
+                <div class="footer-items">
+                    <h1>name of website</h1>
+                    <p>Description of any product or motto of the company.</p>
+                </div>
+
+                <!--  for quick links  -->
+                <div class="footer-items">
+                    <h3>Quick Links</h3>
+                    <div class="border1"></div>
+                    <!--for the underline -->
+                    <ul>
+                        <a href="#">
+                            <li>Home</li>
+                        </a>
+                        <a href="#">
+                            <li>Search</li>
+                        </a>
+                        <a href="#">
+                            <li>Contact</li>
+                        </a>
+                        <a href="#">
+                            <li>About</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <!--  for some other links -->
+                <div class="footer-items">
+                    <h3>Recipes</h3>
+                    <div class="border1"></div>
+                    <!--for the underline -->
+                    <ul>
+                        <a href="#">
+                            <li>Indian</li>
+                        </a>
+                        <a href="#">
+                            <li>Chinese</li>
+                        </a>
+                        <a href="#">
+                            <li>Mexican</li>
+                        </a>
+                        <a href="#">
+                            <li>Italian</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <!--  for contact us info -->
+                <div class="footer-items">
+                    <h3>Contact us</h3>
+                    <div class="border1"></div>
+                    <ul>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>zzZ, abc</li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i>123456789</li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i>boom@gmail.com</li>
+                    </ul>
+
+                    <!--   for social links -->
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--   Footer Bottom start  -->
+            <div class="footer-bottom">
+                Copyright &copy; whosyourdaddyweb 2021.
+            </div>
+        </div>
+
+        <!--   Footer Bottom end -->
+
+        <!--   FOOTER END -->
     </footer>
 </body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('image-blur');
+        });
+
+        portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('image-blur');
+        });
+    });
+
+</script>
 
 </html>
