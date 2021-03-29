@@ -7,7 +7,7 @@
     <title>Page Title</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
 </head>
 
 <body>
@@ -107,16 +107,16 @@
             </p>
     </section>
     <div id="error"></div>
-    <form action= "/" method="GET">
+    <form >        <!-- what is going omn with 'action' when set to "/" (isnt this current page?) -->
         <div>
-            <label for="name">Name </label>
-            <input id="name" name= "name" type="text">
+            <label for="name"> Name </label>
+            <input id="name" name= "name" type="text" >
         </div>
         <div>
             <label for="password">Password </label>
             <input id="password" name= "password" type="password">
         </div>
-        <button type="submit"> Submit</button>
+        <button id="button" > Submit</button>
     </form>
     <footer>
         <!--  FOOTER START -->
@@ -201,6 +201,7 @@
 
         <!--   FOOTER END -->
     </footer>
+    <script src="play.js"></script>
 </body>
 <script>
     const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
