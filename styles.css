@@ -10,12 +10,13 @@ body {
 }
 
 .container {
+    
     display: grid; 
-    grid-template-columns: 1fr;     /* fr=fractional unit */
+    grid-template-columns: 1fr;    /* fr=fractional unit */
 }
 
 .nav-wrapper {
-     display: none;
+     display: none; /* none */
     justify-content: space-between;
     padding: 38px;
 }
@@ -31,7 +32,14 @@ body {
     text-transform: uppercase;          /* changing text to upper case, does not effect html*/
     font-size: 0.9em;
 }
-
+  .brand-2 {
+      z-index: 5;
+      float: left;
+    
+  }
+   
+      /*looking to mobe name chris to left
+} */
 .nav-link-wrapper {
     height: 22px;
     border-bottom: 1px solid transparent;
@@ -57,9 +65,13 @@ body {
     text-align: right;
     height: 70px;
     line-height: 70px;
+    /*padding-left: 300px;*/      /* impacts menu open */
+    
+   
 }
 .menu {
     margin: 0 30px 0 0;
+    
 }
 .menu a {
     clear: right;
@@ -67,49 +79,58 @@ body {
     color: gray;
     margin: 0 10px;
     line-height: 70px;
+    
 }
 
 span {
     color: #54D17A;
 }
 
-label {
+.nav-label {
     margin: 0 40px 0 0;
     font-size: 26px;
     line-height: 70px;
-    display: none;
+    display: none; /* none */
     width: 26px;
     float: right;
 }
 #toggle {
-    display: none;
+    display: none; /* none to get rid of box*/
+    
 }
 
 
 @media only screen and (max-width: 600px) {
-    label {
+    .nav-label {
         display: block;
         cursor: pointer;
+        
+        
     }
     .menu {
         text-align: center;
         width: 100%;
         display: none;
+        
     }
     .menu a {
         display: block;
         border-bottom: 1px solid #EAEAEB;
         margin: 0;
+        position: relative;
+        z-index: 10;
+        background-color: black;
+        
      
     }
-    #toggle:checked + .menu {
-        display: block;
-    }
-    
+    body #toggle:checked + .menu {        /* here is where dave said delete this +.menu... */
+        display: block;                     /*forgot to put it back after solving other issues*/
+    }                                           /* broke the whole thing*/
+                                    /* took a glass of buffalo trace to solve*/
     
 }
 
-/* Portfolio styles ================*/
+/* Portfolio styles =================================================================*/
 .portfolio-items-wrapper {
     display: grid;
     height: 140%;
@@ -168,11 +189,14 @@ filter: brightness(10%);
     display: flex;
     flex-direction: column;
     padding-top: 20px;
-    background-color: thistle;
+    background-color: burlywood;
     flex: 1 300px ;
     /*flex-wrap: wrap;*/
-    margin-top: 4.5%;
-    width: 100%;
+    /* margin-top: 4.5%;
+    width: 100%; */
+    margin-right: 20px;
+    margin: 30px 10px;
+    border-radius: 60px;
     
   
     
@@ -184,6 +208,9 @@ filter: brightness(10%);
     flex-direction: column;  /*puts title and text on 2 diff lines */
     padding: 10px;
     background-color: turquoise;
+    border: 1px solid grey;
+    border-radius: 20px;
+    box-shadow: 2px 1px 2px rebeccapurple;
     
     
 
@@ -203,6 +230,10 @@ filter: brightness(10%);
     
     
     
+}
+.qigong-list {
+    color: black;
+    font-style: italic;
 }
 
 /* FOOTER */
@@ -312,8 +343,8 @@ filter: brightness(10%);
         /* for tablet mode view */
          
         @media screen and (min-width: 600px) and (max-width: 1275px) {
-            .nav {
-                display: none;
+             .nav {
+                display: none; 
             }
             .nav-wrapper {
                 display: flex;
@@ -373,7 +404,7 @@ filter: brightness(10%);
          
         @media screen and (min-width: 1276px) {
             .nav {
-                display: none;
+                display: none; 
             }
             .nav-wrapper {
                 display: flex;
