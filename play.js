@@ -12,6 +12,6 @@ const isLoginFormValid = () =>{
         alert("This is now Working!");
     }
     if(password.value === "" || password.value !== '123'){
-        alert("This is WACK!!!!");
+        alert("This is WACK!!!! Put in the correct password PLEASE!");
     }
 }
