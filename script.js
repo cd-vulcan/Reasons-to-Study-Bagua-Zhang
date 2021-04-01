@@ -4,7 +4,7 @@ var form = document.getElementById('form');
 var errorElement = document.getElementById('error');
 
 form.addEventListener('submit', (e) => {
-    let messages = []s
+    let messages = []
     if (username.value === '' || username.value == null) {
         alert('Name is required!')  ;       /*changed ""name to user name because of resrved word list being obsolete*/
     } 
