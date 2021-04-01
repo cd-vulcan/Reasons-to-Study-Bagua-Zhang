@@ -35,6 +35,16 @@ body {
   .brand-2 {
       z-index: 5;
       float: left;
+      background-color: burlywood;
+    border-radius: 70px;
+    padding-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: larger;
+    margin-bottom: 10px;
     
   }
    
@@ -169,6 +179,10 @@ filter: brightness(10%);
     width: 50%;
     margin-bottom: 20px;
     margin: auto;
+    align-content: center;
+    justify-content: center;
+    
+    /* max-width: 130px; */
     
 
 }
@@ -352,8 +366,10 @@ filter: brightness(10%);
             .logo-wrapper img {
                 
                 margin-top: 270px;
-            
+                min-width: 100px;
+
             }
+
             .portfolio-img-background {
                 height: 350px;
 
@@ -413,7 +429,7 @@ filter: brightness(10%);
             .logo-wrapper img {
                 
                 margin-top: 270px;
-            
+                min-width: 100px;
             }
             .portfolio-img-background {
                 height: 350px;
