@@ -76,7 +76,7 @@ body {
     height: 70px;
     line-height: 70px;
     /*padding-left: 300px;*/      /* impacts menu open */
-    
+    margin: 0 20px;
    
 }
 .menu {
@@ -86,10 +86,11 @@ body {
 .menu a {
     clear: right;
     text-decoration: none;
-    color: gray;
+    color: burlywood;
     margin: 0 10px;
     line-height: 70px;
-    
+    margin-left: 20px;
+    font-size: large;
 }
 
 span {
@@ -181,7 +182,7 @@ filter: brightness(10%);
     margin: auto;
     align-content: center;
     justify-content: center;
-    
+    min-width: 170px;
     /* max-width: 130px; */
     
 
@@ -366,7 +367,7 @@ filter: brightness(10%);
             .logo-wrapper img {
                 
                 margin-top: 270px;
-                min-width: 100px;
+                
 
             }
 
@@ -397,15 +398,15 @@ filter: brightness(10%);
             }
             .phase-text1 {
 
-                background-color: tomato;
+                background-color: ghostwhite;
                 
             }
             .phase-text2 {
-                background-color: yellow;
+                background-color: ghostwhite;
 
             }
             .phase-text3 {
-                background-color: goldenrod;
+                background-color: ghostwhite;
                 /*flex: 2 15rem;*/
 
             }
