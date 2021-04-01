@@ -140,6 +140,34 @@ span {
                                     /* took a glass of buffalo trace to solve*/
     
 }
+.anidaddy {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.ani {
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    animation: scaling 2.5s ease-in-out infinite;
+    
+    
+    
+}
+@keyframes scaling  {
+    0%, 100%{
+        transform:scale(0.2);
+        background-color: blueviolet
+    }
+    50% {
+        transform:scale(1);
+        background-color: burlywood;
+    }
+}
 
 /* Portfolio styles =================================================================*/
 .portfolio-items-wrapper {
@@ -184,7 +212,7 @@ filter: brightness(10%);
     justify-content: center;
     min-width: 170px;
     /* max-width: 130px; */
-    
+    margin-top: 45px;
 
 }
 .img-text-wrapper .subtitle {
@@ -203,14 +231,14 @@ filter: brightness(10%);
 .section-1-wrapper {
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    
     background-color: burlywood;
     flex: 1 300px ;
     /*flex-wrap: wrap;*/
     /* margin-top: 4.5%;
     width: 100%; */
     margin-right: 20px;
-    margin: 15px 10px;
+    margin: 0px 10px;
     border-radius: 60px;
     
   
@@ -427,6 +455,10 @@ filter: brightness(10%);
                 display: flex;
 
             }
+            .container{
+                margin: 0 10px;
+                padding-top: 10px;
+            }
             .logo-wrapper img {
                 
                 margin-top: 270px;
@@ -449,6 +481,7 @@ filter: brightness(10%);
             .section-1-wrapper {
                 flex-direction: row;
                 justify-content: center;
+                padding-top: 20px;
                 
             }
             .phase-wrapper {
