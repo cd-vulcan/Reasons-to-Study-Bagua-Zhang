@@ -288,6 +288,8 @@ filter: brightness(10%);
     margin: 10px 20px;
     padding: 10px;
     justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 /* FOOTER */
         .footer {
@@ -480,7 +482,11 @@ filter: brightness(10%);
             .company {
                 display: none;
             }
-        }
+            .form1 {
+                flex-direction: row;
+            }
+        }   
+        
          
         /* for full screen view */
          
