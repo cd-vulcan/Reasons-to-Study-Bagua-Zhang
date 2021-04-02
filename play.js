@@ -15,7 +15,7 @@ const isLoginFormValid = () =>{
         alert("This is WACK!!!! Put in the correct password PLEASE!");
     }
     if(password.value === '123'){
-        alert(`thank you for entering the correct password ${username.value}`); /* alert works without usernamne */
+        alert(`tha-nk you for entering the correct password ${username.value}`); /* alert works without usernamne */
     }
 }
 const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
