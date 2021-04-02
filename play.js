@@ -9,10 +9,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 const isLoginFormValid = () =>{
     if(username.value === ""){
-        alert("This is now Working!");
+        alert("need username!");
     }
     if(password.value === "" || password.value !== '123'){
         alert("This is WACK!!!! Put in the correct password PLEASE!");
+    }
+    if(password.value === '123'){
+        alert(`thank you for entering the correct password ${username.value}`); /* alert works without usernamne */
     }
 }
 const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
