@@ -4,13 +4,15 @@ Features:
 - Mobile First Responsive
 - Hamburger Menu [mobile only], Custom animation (css)
 - Media Queries at vairous sizes to fix viewing content atleast 2 (css)
+- Wave animation featuring "nth-chid" selectors. (css)
 
 - Form Validation username, and password (js) [bottom of page above footer]
     password is 123, if you dont use it you will get an alert.
     username requires input or alert will pop up.
-    does not resuly in addiional acces to the site.
+    When you enter password correctly you see alert with input from username.
+    Does not resuly in addiional access to the site.
 
-- use Event listeners for animation on top photo grid. Running the cursor and or clicking on .pngs "main word on top of Background img"
+- Use Event listeners and nodes for animation on top photo grid. Running the cursor and or clicking on .pngs "main word on top of Background img"
 causes animation transition to black and reveals violet-purple quotes.
 
 - We do have active links on the page:
@@ -20,6 +22,6 @@ Footer ("top of page" only above black footer)
 
 - Reguarding git, I choose to push commits to the gh-pages branch and merge to master to get used to the ussage of pull requests.
 
-Thanks for the oppurtunity to learn, this class has been rewarding in many ways.
+Many Thanks for the oppurtunity to learn, this class has been rewarding in many ways. to Andre, Jen, Rob, Dave!
 
 ~Chris Diaz
