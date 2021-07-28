@@ -49,36 +49,47 @@ $(function() {
     
   })
 //form to object
+let dogFeeders = {};
+
+function addToFeeders (name, email) {
+	dogFeeders[name] = email;
+};
+
 function handleSubmit(event) {
     event.preventDefault();
     const data = new FormData(event.target);
-    const value = data.get('email');
-    console.log({ value });
+    const email = data.get('email');
+    const name = data.get('name');
+
+	addToFeeders(name, email);
+
+	console.dir(dogFeeders);
     }
 const form = document.querySelector("#femail");
 form.addEventListener('submit', handleSubmit);
 
+
 //json------------------------------------------------
-const fs = require("fs");
+// const fs = require("fs"); //node module
   
 // Storing the JSON format data in myObject
-var data = fs.readFileSync("data.json");
-var myObject = JSON.parse(data);
+// var data = fs.readFileSync("data.json");
+// var myObject = JSON.parse(data);
   
 // Defining new data to be added
-let newData = {
-  country: "England",
-};
+// let newData = {
+//   "email": "value.handleSubmit",
+// };
   
-// Adding the new data to our object
-myObject.push(newData);
+// // Adding the new data to our object
+// myObject.push(newData);
   
-// Writing to our JSON file
-var newData2 = JSON.stringify(myObject);
-fs.writeFile("data2.json", newData2, (err) => {
-  // Error checking
-  if (err) throw err;
-  console.log("New data added");
-});
+// // Writing to our JSON file
+// var newData2 = JSON.stringify(myObject);
+// fs.writeFile("data2.json", newData2, (err) => {
+//   // Error checking
+//   if (err) throw err;
+//   console.log("New data added");
+// });
   
   
