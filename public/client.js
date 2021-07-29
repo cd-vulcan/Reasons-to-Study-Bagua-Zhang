@@ -67,7 +67,17 @@ function handleSubmit(event) {
     }
 const form = document.querySelector("#femail");
 form.addEventListener('submit', handleSubmit);
-
+//----------------------------------------------- display object
+const addToList = document.querySelector('#objectListButton');
+addToList.addEventListener('click', () => {
+  let p = document.querySelector("#lastFeeder"); //adds element
+  let div = document.querySelector("#divButton");
+  let dogFeederKeys = Object.keys(dogFeeders);
+  let lastFeeder = dogFeederKeys[dogFeederKeys.length - 1];
+  console.log(dogFeederKeys)
+  p.textContent = lastFeeder; //listInput.value; //adds text to new e.
+  // div.appendChild(p);
+});
 
 //json------------------------------------------------
 // const fs = require("fs"); //node module
