@@ -1,8 +1,8 @@
 // $(function() {
   
 //     let pet_info = {
-//       "name" : "Fenrir",
-//       "weight" : 6,
+//       "name" : "Fenrir",         express work in prog
+//       "weight" : 6,            game interacted with pet directly vs creating new objects with standard js
 //       "happiness": 0
 //     }
     
@@ -52,19 +52,19 @@
 
 
 // Variables
-
+                                    //parameters to be used in functions
 const ownersPetsInfo = {
   'Mastah FU' : {
     'petInfo' : {
-      'petName' : 'Fenrir',
+      'petName' : 'Fenrir',     //storing data based on user input, pulls from api to be stored for later
       'weight' : 70,
       'happiness' : 30
-    },
+    },                            //function to interact is down below line 145 if else statements
     'email' : 'boom@gmail.com'
   }
 };
 
-let currentPetOwner = 'Mastah FU';
+let currentPetOwner = 'Mastah FU'; // gets updated on new owner submit/adopt, starts w/fu
 const lowestWeight = 5;
 const highestWeight = 130;
 const lowestHappiness = 7;
@@ -73,9 +73,9 @@ const lowestHappiness = 7;
 // Functions
 
 function ValidateEmail(inputText) {
-  var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/; //  req regex validate!!!
   if (inputText.match(mailformat)) {
-    return true;
+    return true;            //.match sends a boolean in this case t or f which i use in e.handler dwn below
   }
   else {
     return false;
@@ -95,7 +95,7 @@ function ValidateEmail(inputText) {
 //   petNameReq.send();
 // };
 
-function retrieveResponse(url){
+function retrieveResponse(url){       // asyn/promise req returning promise!!!!!!!!!! 102-115
   return fetch(url);
 }
 
@@ -116,25 +116,25 @@ async function getPetPicture() {
 };
 
 async function randomPetGenerator() {
-  let petName = await getPetName();
-  let petPicture = await getPetPicture();
+  let petName = await getPetName(); //102-107
+  let petPicture = await getPetPicture(); //110-115
   let weight = Math.floor(Math.random() * highestWeight) + lowestWeight;
   let happiness = lowestHappiness;
   let petObject = {
     'petName' : petName.results[0].name.first,
-    'petPicture': petPicture.message,
+    'petPicture': petPicture.message,             //after "awaiting" all the things, assign to new object
     'weight': weight,
     'happiness': happiness
   }
   return petObject;
 }
 
-async function adoptPet (owner_name, owner_email) {
+async function adoptPet (owner_name, owner_email) {   //102-115
   let newPet = await randomPetGenerator();
   currentPetOwner = owner_name;
   ownersPetsInfo[owner_name] = {
     'petInfo' : newPet,
-    'email' : owner_email
+    'email' : owner_email     // stores new owner and assigns new pet after submit calling from api above w/random stats
   };
 };
 
@@ -156,22 +156,24 @@ function interactWithPet (weight, happiness, target) {
 
   };
 
-  return [newWeight, newHappiness]
+  return [newWeight, newHappiness]                //req 2 arg return req!!!!! for the game   141-159 !!!!!!!
 };
 
 function getHappiestPet() {
-  let owners = Object.keys(ownersPetsInfo);
-  let ownerHappiestDog = owners.reduce(
+  let owners = Object.keys(ownersPetsInfo);  //returns array of owners submitted including fu
+  let ownerHappiestDog = owners.reduce( //acc , c
     (a,b) => {
-      if (ownersPetsInfo[a].petInfo.happiness >= ownersPetsInfo[b].petInfo.happiness) {
+      if (ownersPetsInfo[a].petInfo.happiness >= ownersPetsInfo[b].petInfo.happiness) { //compares all to mastah fu untill owner with the happiest is returned
         return a
       } else {
         return b
-      }
-    } 
-  )
+      }                               //object with in objects called
+    }                                             //due to function
+  )               //'master fus' dog 'fenrir' is the happiest with '#of tail wags'
   return `${ownerHappiestDog}'s dog ${ownersPetsInfo[ownerHappiestDog].petInfo.petName} is the happiest with ${ownersPetsInfo[ownerHappiestDog].petInfo.happiness} tail wags.`
 }
+
+
 
 
 // Event Handlers
@@ -209,7 +211,7 @@ async function handleSubmit(event) {
 
 
 form.addEventListener('submit', handleSubmit);
-//----------------------------------------------- display object
+//----------------------------------------------- display object      req 218 displaysinfo from object ownerspetinfoObject!!!
 
 addToList.addEventListener('click', () => {
   let p = document.querySelector("#happiest-pet");
