@@ -3,10 +3,10 @@ This is my project to pass the Javascript Segment for Code Louisville. The topic
 
 Features:
  [JAVASCRIPT] [FILE: client.js]
--Email validation with Regex (requires atleast the @ etc will shoot out an error if not)
--Function inwhich takes 2 or more arguments and returns values
--Pulls external data from api utilizing aysnc await and returns promise (displaying new names, and dog photos)
--displaying info from an object / arrays (starting with base stats and then having a new animals stats generated that change as you interact with the object)
+- Email validation with Regex (requires atleast the @ etc will shoot out an error if not)
+- Function inwhich takes 2 or more arguments and returns values
+- Pulls external data from api utilizing aysnc await and returns promise (displaying new names, and dog photos)
+- displaying info from an object / arrays (starting with base stats and then having a new animals stats generated that change as you interact with the object)
 
 - Mobile First Responsive [FILE: styles.css]
 - Hamburger Menu [mobile only], Custom animation (css)
