@@ -20,16 +20,7 @@ body {
     justify-content: space-between;
     padding: 38px;
 }
-.mastaContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.doggamewrapper{
-    display: flex;
-    flex-direction: column;
 
-}
 .dashboard{
 
    
@@ -435,6 +426,20 @@ filter: brightness(10%);
             display: none;
          }
         
+         .doggamewrapper{
+            
+         }
+         .pet-image {
+            height:150px;
+          }
+
+          .mastaContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 1rem;
+            
+        }
         /* for tablet mode view */
          
         @media screen and (min-width: 600px) and (max-width: 1275px) {
@@ -449,7 +454,12 @@ filter: brightness(10%);
                 margin-top: 270px;
                 
 
-            }
+            }   
+            
+
+            .pet-image {
+                height:150px;
+              }
 
             .portfolio-img-background {
                 height: 350px;
@@ -515,6 +525,11 @@ filter: brightness(10%);
             }
             .form1 {
                 flex-direction: row;
+            }
+            .mastaContainer {
+               display: flex;
+               align-items: center;
+
             }
         }   
         
@@ -586,30 +601,21 @@ filter: brightness(10%);
                 margin-right: 15vmax;
                 
             }
-            ..doggamewrapper{
-                display:flex;
-                flex-direction: row;
-            }
+            
+            
             .happypet {
 
 
             }
             .doggamewrapper{
                 display: block;
+            }
                 
-        }
+        
 
         
          
-        /* you can toggle the media screen view accordingly by changing the (max-width: px) to your convenience */
-
-        /* testing
-
-        /* styles */
-/* called by your view template */
-
-/* You might want to try something fancier: */
-/* less: http://lesscss.org/ */
+       
 
 * {
     box-sizing: border-box;
@@ -710,3 +716,4 @@ filter: brightness(10%);
   #femailwrapper {
       flex:50%;
   }
+}
