@@ -313,7 +313,6 @@ filter: brightness(10%);
         .footer {
             width: 100%;
             background: #852bbd;
-            display: block;
          }
          
          .inner-footer {
@@ -663,6 +662,21 @@ filter: brightness(10%);
     background-image: linear-gradient(to bottom,rgba(246,246,246,.1)0%,rgba(30,40,53,0)66%);
     color: #fafafa;
   }
-         
-        
-    
+
+  #adopt-pet {
+    display: flex;
+    flex-direction: column;
+  }  
+
+  #objectListButton {
+      width: 100px;
+  }
+
+  #femail {
+      display: flex;
+      flex-direction: column;
+  }
+
+  #femailwrapper {
+      flex:50%;
+  }
