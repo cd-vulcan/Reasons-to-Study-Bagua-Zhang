@@ -3,10 +3,10 @@ This is my project to pass the Javascript Segment for Code Louisville. The topic
 
 Features:
  [JAVASCRIPT] [FILE: client.js]
--Email validation with Regex (requires atleast the @ etc will shoot out an error if not)
--Function inwhich takes 2 or more arguments and returns values
--Pulls external data from api utilizing aysnc await and returns promise (displaying new names, and dog photos)
--displaying info from an object / arrays (starting with base stats and then having a new animals stats generated that change as you interact with the object)
+- Email validation with Regex (requires atleast the @ etc will shoot out an error if not)
+- Function inwhich takes 2 or more arguments and returns values
+- Pulls external data from api utilizing aysnc await and returns promise (displaying new names, and dog photos)
+- displaying info from an object / arrays (starting with base stats and then having a new animals stats generated that change as you interact with the object)
 
 - Mobile First Responsive [FILE: styles.css]
 - Hamburger Menu [mobile only], Custom animation (css)
@@ -30,6 +30,6 @@ Footer ("top of page" only above black footer)
 - *SideNOTE* Was working on getting express.lib/node/npm up and running but ended up having to rearrange the skelton arrangement of the folders etc to get the project to wotk with github - pages as well as some other snags. So i have left the code commented out for now.
 
 
-Many Thanks for the oppurtunity to learn, this class has been rewarding in many ways. Many thanks to the mentors. Javascript is complex and am excited to have stumbled upon this journey. 
+!Many Thanks for the oppurtunity to learn, this class has been rewarding in many ways. Many thanks to the mentors. Javascript is complex and am excited to have stumbled upon this journey. 
 
 ~Chris Diaz
