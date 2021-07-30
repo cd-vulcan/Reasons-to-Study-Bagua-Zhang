@@ -20,7 +20,20 @@ body {
     justify-content: space-between;
     padding: 38px;
 }
+.mastaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.doggamewrapper{
+    display: flex;
+    flex-direction: column;
 
+}
+.dashboard{
+
+   
+}
 .left-side {
     display: flex;
 }
@@ -421,6 +434,7 @@ filter: brightness(10%);
          .contact-us {
             display: none;
          }
+        
         /* for tablet mode view */
          
         @media screen and (min-width: 600px) and (max-width: 1275px) {
@@ -567,8 +581,24 @@ filter: brightness(10%);
                 margin-bottom: 10px;
                 margin: 15px 15px;
             }
+            .mastaContainer {
+                margin-left: 15vmax;
+                margin-right: 15vmax;
+                
+            }
+            ..doggamewrapper{
+                display:flex;
+                flex-direction: row;
+            }
+            .happypet {
 
+
+            }
+            .doggamewrapper{
+                display: block;
+                
         }
+
         
          
         /* you can toggle the media screen view accordingly by changing the (max-width: px) to your convenience */
@@ -587,7 +617,7 @@ filter: brightness(10%);
   
   body {
     font-family: helvetica, arial, sans-serif;
-    margin: 25px;
+    /*margin: 25px;*/
   }
   
   main {
